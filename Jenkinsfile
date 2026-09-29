@@ -11,7 +11,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'pytest --html=report.html --self-contained-html'
+                bat 'python -m pytest --html=report.html --self-contained-html'
             }
         }
     }
